@@ -72,9 +72,7 @@ int main() {
                 break;
         }
 
-        iterations++;
-        printf("Iterations %d\n", iterations);
-        
+        iterations++;        
     }
 
     printf("Finished!\n");
@@ -173,7 +171,6 @@ int check_word(char *secret_word, char *guess)
             printf(RED "%c" RESET, guess[res]);
         }
     }
-    printf("\nCorrecct guesses: %d", correct_guess_count);
     printf("\n");
     return correct_guess_count;
 }

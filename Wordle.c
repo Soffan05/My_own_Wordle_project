@@ -1,16 +1,4 @@
-/**
-Vad spelet handlar om:
-    - Man har 6 försök att gissa ett ord med 5 bokstäver
-    - Varje gissning måste vara ett giltigt 5-bokstavligt ord.
 
-Använd ANSI escape code för att få färgad text:
-    printf("\033[31mRöd text\033[0m\n");        // Röd
-    printf("\033[32mGrön text\033[0m\n");       // Grön  
-    printf("\033[33mGul text\033[0m\n");        // Gul
-    printf("\033[34mBlå text\033[0m\n");        // Blå
-    printf("\033[35mMagenta text\033[0m\n");    // Magenta
-    printf("\033[36mCyan text\033[0m\n"); 
-*/
 /* Konstanter för färgkodning*/
 #define RED "\033[31m"
 #define YELLOW "\033[33m"
@@ -72,10 +60,12 @@ int main() {
                 break;
         }
 
-        iterations++;        
+        iterations++;
     }
 
     printf("Finished!\n");
+    printf("Press enter to finish the program... ");
+    getchar();
     return 0;
 }
 
